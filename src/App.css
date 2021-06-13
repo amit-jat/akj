@@ -1,0 +1,70 @@
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  color: rgb(141, 7, 168);
+}
+:hover.right-arrow {
+  color:rgb(255, 0, 255)
+}
+
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: rgb(141, 7, 168);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  
+ 
+}
+
+
+:hover.left-arrow {
+  color:rgb(255, 0, 255)
+}
+
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+body {
+  background: #12c2e9;  
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
